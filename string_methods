@@ -1,0 +1,105 @@
+Thers are different types of string method and it is beneficial to know some of them to get the benefit of them efficiently -
+
+charAt(index): Returns the character at the specified index within a string.
+const str = "Hello";
+console.log(str.charAt(1)); // Output: "e"
+
+
+charCodeAt(index): Returns the Unicode value of the character at the specified index within a string.
+const str = "Hello";
+console.log(str.charCodeAt(0)); // Output: 72 (Unicode value of 'H')
+
+
+concat(str1, str2, ...): Combines one or more strings and returns a new string
+const str1 = "Hello";
+const str2 = "World";
+console.log(str1.concat(", ", str2)); // Output: "Hello, World"
+
+
+indexOf(searchValue, startIndex): Returns the index within the calling string object of the first occurrence of the specified value, starting the search at fromIndex, or -1 if the value is not found.
+const str = "Hello World";
+console.log(str.indexOf("o")); // Output: 4
+
+
+lastIndexOf(searchValue, startIndex): Returns the index within the calling string object of the last occurrence of the specified value, searching backward from startIndex, or -1 if the value is not found.
+const str = "Hello World";
+console.log(str.lastIndexOf("o")); // Output: 7
+
+
+includes(searchString, position): Determines whether a string contains the specified substring.
+const str = "Hello World";
+console.log(str.includes("World")); // Output: true
+
+
+startsWith(searchString, position): Determines whether a string begins with the characters of a specified string.
+const str = "Hello World";
+console.log(str.startsWith("Hello")); // Output: true
+
+
+endsWith(searchString, length): Determines whether a string ends with the characters of a specified string.
+const str = "Hello World";
+console.log(str.endsWith("World")); // Output: true
+
+
+slice(startIndex, endIndex): Extracts a section of a string and returns it as a new string.
+const str = "Hello World";
+console.log(str.slice(6, 11)); // Output: "World"
+
+
+substring(startIndex, endIndex): Extracts characters from a string between two specified indices.
+const str = "Hello World";
+console.log(str.substring(6, 11)); // Output: "World"
+
+
+substr(startIndex, length): Extracts characters from a string, beginning at the specified start position, and through the specified number of character lengths.
+const str = "Hello World";
+console.log(str.substr(6, 5)); // Output: "World"
+
+
+toLowerCase(): Converts all characters in a string to lowercase.
+const str = "Hello World";
+console.log(str.toLowerCase()); // Output: "hello world"
+
+
+toUpperCase(): Converts all characters in a string to uppercase.
+const str = "Hello World";
+console.log(str.toUpperCase()); // Output: "HELLO WORLD"
+
+
+trim(): Removes whitespace from both ends of a string.
+const str = "   Hello World   ";
+console.log(str.trim()); // Output: "Hello World"
+
+
+trimStart() or trimLeft(): Removes whitespace from the beginning of a string.
+const str = "   Hello World   ";
+console.log(str.trimStart()); // Output: "Hello World   "
+
+
+trimEnd() or trimRight(): Removes whitespace from the end of a string.
+const str = "   Hello World   ";
+console.log(str.trimEnd()); // Output: "   Hello World"
+
+
+split(separator, limit): Splits a string into an array of substrings based on a specified separator.
+const str = "Hello World";
+console.log(str.split(" ")); // Output: ["Hello", "World"]
+
+
+replace(searchValue, replaceValue): Searches a string for a specified value or regular expression and returns a new string where the specified values are replaced.
+const str = "Hello World";
+console.log(str.replace("World", "Universe")); // Output: "Hello Universe"
+
+
+match(regexp): Retrieves the result of matching a string against a regular expression.
+const str = "Hello World";
+console.log(str.match(/o/g)); // Output: ["o", "o"]
+
+
+padStart(targetLength, padString): Pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.
+const str = "Hello";
+console.log(str.padStart(10, ".")); // Output: ".....Hello"
+
+
+
+they were some most important methods for string that may help in the journey of learning javascipt , yolo yolo .
